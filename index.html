@@ -7,8 +7,8 @@
             height: 100px;
             background: red;
             }
-            .test {
-            width: 100px;
+            .isquare {
+            width: 37.80;
             height: 100px;
             background: blue;
             }
@@ -21,10 +21,29 @@
     for 96 dpi
     -->
 
+
     <body bgcolor="#86BEDC">
         <!-- TODO: build a square -->
         <div id="sq" class="square"></div>
 
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <div id="sqi" class="isquare"></div>
+
+        <br><br><br><br><br><br><br><br><br><br>
+
+        <img id="imgsq" src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.es8iHTsVo5TwbZH89YL4gwHaFj%26pid%3DApi&f=1&ipt=b3ef2c0f244d7ec0e48ec11fe4938ff9da463e3ccf85737153256e6879a16a5a&ipo=images">
+
     </body>
+
+    <script>
+        console.log("hello world!");
+        let x = window.devicePixelRatio;
+        console.log(x);
+        let ow = document.getElementById("sqi").clientWidth * 5;
+        document.getElementById("sqi").style.width = ow * x;
+        document.getElementById("sqi").clientWidth = ow * x;
+        document.getElementById("imgsq").width = "5cm";
+    </script>
 
 </html>
